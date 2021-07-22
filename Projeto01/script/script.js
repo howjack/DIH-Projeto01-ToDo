@@ -196,8 +196,8 @@ if (localStorage.getItem("prefferedMode")) {
     mode.classList.add("ballDark");
     document.body.classList.add("DarkMode");
   } else {
-    //se não tiver nada setado, o padrão vai ser dark
-    localStorage.setItem("prefferedMode", "dark");
+    //se não tiver nada setado, o padrão vai ser light
+    localStorage.setItem("prefferedMode", "light");
   }
 }
 
@@ -216,7 +216,7 @@ function btnAnimation() {
     mode.classList.add("ballDark");
     document.body.classList.add("DarkMode");
     //seta o modo dark ao localStorage
-    localStorage.prefferedMode = "light";
+    localStorage.prefferedMode = "dark";
   } else {
     //remove as classes do modo dark e coloca do modo light
     mode.classList.remove("ballDark");
