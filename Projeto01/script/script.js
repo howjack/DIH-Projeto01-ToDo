@@ -196,8 +196,8 @@ if (localStorage.getItem("prefferedMode")) {
     mode.classList.add("ballDark");
     document.body.classList.add("DarkMode");
   } else {
-    //se não tiver nada setado, o padrão vai ser light
-    localStorage.setItem("prefferedMode", "light");
+    //se não tiver nada setado, o padrão vai ser dark
+    localStorage.setItem("prefferedMode", "dark");
   }
 }
 
