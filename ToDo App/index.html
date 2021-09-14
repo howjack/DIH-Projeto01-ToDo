@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css do html -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script do html -->
+    <script defer src="script/script.js"></script>
+    <!-- favicon do html -->
+    <link rel="shortcut icon" href="/img/ico/favicon.ico" type="image/x-icon">
+    <title>ToDo List - Sua lista de tarefas</title>
+</head>
+
+<body>
+    <section>
+        <!-- cabeçalho -->
+        <h1>To Do ✔️ List</h1>
+        <!-- div que esta o campo de texto e o botão para adicionar -->
+        <div class="addList-container">
+            <!-- campo de texto -->
+            <input type="text" id="tarefa" placeholder="Insira uma tarefa aqui">
+            <!-- botão para adicionar -->
+            <button onclick="adicionarTarefa()">Adicionar</button>
+        </div>
+        <div class="list-container">
+            <!-- Esta é a ul onde sera adicionado as tarefas  -->
+            <ul id="list">
+                <!-- esse é o modelo de como o JS vai adicionar as tarefas
+                <li>
+                    <input type="checkbox" id="checked">
+                    <p>Programar</p>
+                    <span>&times</span>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+    <!-- Essa div abaixo só aparece quando o campo de texto esta vazio
+            e o botão é acionado -->
+    <div class="err">
+        <p id="err">asd</p>
+    </div>
+    <div id="btnMode" class="btnMode">
+        <div id="mode" class="ball ballLight"></div>
+    </div>
+</body>
+
+</html>
